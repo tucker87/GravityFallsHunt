@@ -12,15 +12,30 @@ node gfHunt.js
 
 ## Episodes
 
-### [S02 E01](https://youtu.be/wTnU6LOoRPk)
-- ceaser
-- `wjz ok ep xacejo`
+### [:vhs: S02 E01](https://youtu.be/wTnU6LOoRPk)
+- :herb: ceaser
+- :jigsaw: `wjz ok ep xacejo`
+<details>
+  <summary>Spoiler</summary>
+- :tada: and so it begins
+</details>
 
-### [S02 E02](https://youtu.be/5TJY-8hhWko)
-- ceaser
-- `qi erh xli fscw ex xas eq`
+### [:vhs: S02 E02](https://youtu.be/5TJY-8hhWko)
+- :herb: ceaser
+- jigsaw `qi erh xli fscw ex xas eq`
+<details>
+  <summary>Spoiler</summary>
+- :tada: me and the boys at two am
+</details>
 
-### [S02 E03](https://youtu.be/7HdYJosTb9s)
-- atbash
-- `rg nzb yv wruurxfog gl xlmgrmfv zolmv`
-- `wrhxliw.tt/aXCnU93QEE`
+
+### [:vhs: S02 E03](https://youtu.be/7HdYJosTb9s)
+- :email: atbash
+- :jigsaw: `rg nzb yv wruurxfog gl xlmgrmfv zolmv`
+- :jigsaw: `wrhxliw.tt/aXCnU93QEE`
+<details>
+  <summary>Spoiler</summary>
+- :tada: it may be difficult to continue alone
+- :tada: discord.gg/zCXmF93JVV
+</details>
+
