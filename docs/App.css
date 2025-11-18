@@ -1,0 +1,91 @@
+/* Colors from Cyberdream */
+:root {
+  --bg: #16181a;
+  --bg_alt: #1e2124;
+  --bg_highlight: #3c4048;
+  --fg: #ffffff;
+  --grey: #7b8496;
+  --blue: #5ea1ff;
+  --green: #5eff6c;
+  --cyan: #5ef1ff;
+  --red: #ff6e5e;
+  --yellow: #f1ff5e;
+  --magenta: #ff5ef1;
+  --pink: #ff5ea0;
+  --orange: #ffbd5e;
+  --purple: #bd5eff;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+#app {
+  max-width: 800px;
+  margin: auto;
+}
+
+::marker {
+  color: var(--grey);
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+h1 {
+  color: var(--blue);
+  text-align: center;
+}
+
+h2 {
+  color: var(--orange);
+}
+
+h3 {
+  color: var(--purple);
+}
+
+.entries {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin: 0 20px;
+}
+
+.i {
+  position: relative;
+  padding-left: 25px;
+  display: block;
+
+  &::before {
+    position: absolute;
+    left: 0;
+  }
+
+  &.i-yay {
+    &::before {
+    }
+  }
+}
+.i-yay::before {
+  content: '🎉';
+}
+.i-jigsaw::before {
+  content: '🧩';
+}
+.i-key::before {
+  content: '🔑';
+}
+.i-atbash::before {
+  content: '🔄';
+}
+.i-ceaser::before {
+  content: '👑';
+}
+.i-vigenere::before {
+  content: '📉';
+}

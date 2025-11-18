@@ -1,9 +1,9 @@
 const Spoiler = {
-  props: ['summary'],
+  props: ['summary', 'icon'],
   setup(props) {
-    return { summary: props.summary }
+    return { summary: props.summary, icon: props.icon }
   },
-  template: `<details><summary>{{ summary }}</summary><slot/></details>`,
+  template: `<details><summary>{{ summary }}</summary><span :class="icon"><slot/></span></details>`,
 }
 
 export default Spoiler
