@@ -22,7 +22,7 @@ node gfHunt.js
 
 ### [:vhs: S02 E02](https://youtu.be/5TJY-8hhWko)
 - :herb: ceaser
-- jigsaw `qi erh xli fscw ex xas eq`
+- :jigsaw: `qi erh xli fscw ex xas eq`
 <details>
   <summary>Spoiler</summary>
   <ul><li>:tada: me and the boys at two am</li></ul>
