@@ -1,7 +1,7 @@
-import { to_a0, from_a0 } from "./utils.js";
+import { to_a0, from_a0, isAlpha } from "./utils.js";
 
 const swap_letter = (c) => {
-  if (!c.match(/[a-zA-Z]/)) return c;
+  if (!isAlpha(c)) return c;
 
   let { value, offset } = to_a0(c);
   return from_a0(Math.abs(value - 25), offset);
