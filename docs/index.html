@@ -1,0 +1,23 @@
+<script type="importmap">
+  {
+    "imports": {
+      "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+    }
+  }
+</script>
+
+<script type="module" src="./App.mjs"></script>
+
+<body>
+	<div id="app">
+		<h1>Gravity Falls Cipher Hunt</h1>
+		<section>
+			<h2>Episodes</h2>
+			<Entry v-for="episode in episodes" :data="episode" />
+		</section>
+		<section>
+			<h2>Discord</h2>
+			<Entry v-for="discord in discords" :data="discord" />
+		</section>
+	</div>
+</body>
