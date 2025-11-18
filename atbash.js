@@ -1,15 +1,10 @@
-import { to_a0, from_a0, isAlpha } from './utils.js'
+import { to_a0, letterMap } from './utils.js'
 
 const swap_letter = c => {
-  if (!isAlpha(c)) return c
-
-  let { value, offset } = to_a0(c)
-  return from_a0(Math.abs(value - 25), offset)
+  let { value, to_char } = to_a0(c)
+  return to_char(Math.abs(value - 25))
 }
 
-const atBash = input => {
-  const result = input.split('').map(swap_letter).join('')
-  console.log(result)
-}
+const atBash = input => console.log(letterMap(input, swap_letter))
 
 export { atBash }
