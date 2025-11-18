@@ -17,3 +17,6 @@ vigenere('dm hbvc ai qkmec awjy Kzsxrw Xzwhtxuk!', 'cipherhunters')
 
 console.log('\nDiscord: Mortius Role 2')
 vigenere("Qofm arkkvv dlf'k wulbvt gvbtuxzgu bram", 'huntingciphers')
+
+console.log(':\nDiscord: Casper Role')
+vigenere('Tlujf facv qfht xr xvrpsuy uje Olhluteuyft!', 'AEDFBC')
