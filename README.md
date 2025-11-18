@@ -17,7 +17,7 @@ node gfHunt.js
 - :jigsaw: `wjz ok ep xacejo`
 <details>
   <summary>Spoiler</summary>
-- :tada: and so it begins
+  <ul><li>:tada: and so it begins</li></ul>
 </details>
 
 ### [:vhs: S02 E02](https://youtu.be/5TJY-8hhWko)
@@ -25,7 +25,7 @@ node gfHunt.js
 - jigsaw `qi erh xli fscw ex xas eq`
 <details>
   <summary>Spoiler</summary>
-- :tada: me and the boys at two am
+  <ul><li>:tada: me and the boys at two am</li></ul>
 </details>
 
 
@@ -35,7 +35,9 @@ node gfHunt.js
 - :jigsaw: `wrhxliw.tt/aXCnU93QEE`
 <details>
   <summary>Spoiler</summary>
-- :tada: it may be difficult to continue alone
-- :tada: discord.gg/zCXmF93JVV
+  <ul>
+    <li>:tada: it may be difficult to continue alone</li>
+    <li>:tada: discord.gg/zCXmF93JVV</li>
+  </ul>
 </details>
 
