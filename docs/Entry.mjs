@@ -6,10 +6,10 @@ const Entry = {
   template: `
 			<h3>{{ data.title }}</h3>
 			
-			<Spoiler summary="Code">:jigsaw: {{ data.codes.join(', ') }}</Spoiler>
+			<Spoiler summary="Code">🧩 {{ data.codes.join(', ') }}</Spoiler>
 			<Spoiler summary="Cipher">{{ data.cipher }}</Spoiler>
-			<Spoiler v-if="data.key" summary="Key">:key: {{ data.key }}</Spoiler>
-			<Spoiler summary="Answer">:tada: {{ data.answers.join(', ') }}</Spoiler>
+			<Spoiler v-if="data.key" summary="Key">🔑 {{ data.key }}</Spoiler>
+			<Spoiler summary="Answer">🎉 {{ data.answers.join(', ') }}</Spoiler>
 			`,
 }
 

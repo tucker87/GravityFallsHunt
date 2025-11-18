@@ -12,6 +12,10 @@ I've turned the simple code hunting into coding challenge.
 node gfHunt.js
 ```
 
+## Ciphers
+
+The ciphers can be found at https://notquite.me/GravityFallsHunt/
+
 ## Episodes
 
 ### [:vhs: S02 E01](https://youtu.be/wTnU6LOoRPk)
