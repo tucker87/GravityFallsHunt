@@ -1,64 +1,66 @@
-<html>
+<script type="module">
+	//-==Begin Data Setup==-\\
+	const ensureArray = value => Array.isArray(value) ? value : [value];
 
-<head>
-	<script type="module">
-		import {createApp, ref, defineProps} from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+	const entry = (title, url, codes, cipher, answers, key) =>
+		({title, url, codes: ensureArray(codes), cipher, answers: ensureArray(answers), key})
 
-		const Spoiler = {
-			props: ['summary'],
-			setup(props) {return {...props}},
-			template: `<details><summary>{{ summary }}</summary><slot/></details>`
-		}
+	const episodes = [
+		entry("S02 E01",
+			"https://youtu.be/wTnU6LOoRPk",
+			"wjz ok ep xacejo",
+			"ceaser",
+			"and so it begins"),
+		entry("S02 E02",
+			"https://youtu.be/5TJY-8hhWko",
+			"qi erh xli fscw ex xas eq",
+			"ceaser",
+			"me and the boys at two am"),
+		entry("S02 E03",
+			"https://youtu.be/7HdYJosTb9s",
+			["rg nzb yv wruurxfog gl xlmgrmfv zolmv", "wrhxliw.tt/aXCnU93QEE"],
+			"atbash",
+			["it may be difficult to continue alone", "discord.gg/zCXmF93JVV"])
+	]
+	const discords = [
+		entry("Mortius' role", null, "dm hbvc ai qkmec awjy Kzsxrw Xzwhtxuk!", "vigenere", "be surl to drink your Gilded Tiefling!", "cipherhunters"),
+		entry("Mortius' role #2", null, "Qofm arkkvv dlf'k wulbvt gvbtuxzgu bram", "vigenere", "Just seeing who's paying attention hehe", "huntingciphers"),
+		entry("Casper's role", null, "Tlujf facv qfht xr xvrpsuy uje Olhluteuyft!", "vigenere", "Three days left to support the Kickstarter!", "AEDFBC")
+	]
 
-		const Entry = {
-			props: ['data'],
-			setup(props) {return {data: props.data}},
-			template: `
+	//-==Begin Vue App==-\\
+
+	import {createApp, ref, defineProps} from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+
+	const Spoiler = {
+		props: ['summary'],
+		setup(props) {return {...props}},
+		template: `<details><summary>{{ summary }}</summary><slot/></details>`
+	}
+
+	const Entry = {
+		props: ['data'],
+		setup(props) {return {data: props.data}},
+		template: `
 			<h3>{{ data.title }}</h3>
 			
-			<Spoiler summary="Code">:jigsaw: {{ data.code }}</Spoiler>
+			<Spoiler summary="Code">:jigsaw: {{ data.codes }}</Spoiler>
 			<Spoiler summary="Cipher">:{{ data.cipher }}</Spoiler>
 			<Spoiler v-if="data.key" summary="Key">:key: {{ data.key }}</Spoiler>
-			<Spoiler summary="Answer">:tada: {{ data.answer }}</Spoiler>
+			<Spoiler summary="Answer">:tada: {{ data.answers.join(' ') }}</Spoiler>
 			`
+	}
+
+	const app = createApp({
+		setup() {
+			return {episodes, discords}
 		}
+	})
+	app.component('Entry', Entry)
+	app.component('Spoiler', Spoiler)
 
-		const app = createApp({
-			setup() {
-				const entry = (title, url, code, cipher, answer, key) =>
-					({title, url, code, cipher, answer, key})
-
-				const episodes = [
-					entry("S02 E01",
-						"https://youtu.be/wTnU6LOoRPk",
-						"wjz ok ep xacejo",
-						"ceaser",
-						"and so it begins"),
-					entry("S02 E02",
-						"https://youtu.be/5TJY-8hhWko",
-						"qi erh xli fscw ex xas eq",
-						"ceaser",
-						"me and the boys at two am"),
-					entry("S02 E03",
-						"https://youtu.be/7HdYJosTb9s",
-						["rg nzb yv wruurxfog gl xlmgrmfv zolmv", "wrhxliw.tt/aXCnU93QEE"],
-						"atbash",
-						["it may be difficult to continue alone", "discord.gg/zCXmF93JVV"])
-				]
-				const discords = [
-					entry("Mortius' role", null, "dm hbvc ai qkmec awjy Kzsxrw Xzwhtxuk!", "vigenere", "be surl to drink your Gilded Tiefling!", "cipherhunters"),
-					entry("Mortius' role #2", null, "Qofm arkkvv dlf'k wulbvt gvbtuxzgu bram", "vigenere", "Just seeing who's paying attention hehe", "huntingciphers"),
-					entry("Casper's role", null, "Tlujf facv qfht xr xvrpsuy uje Olhluteuyft!", "vigenere", "Three days left to support the Kickstarter!", "AEDFBC")
-				]
-				return {episodes, discords}
-			}
-		})
-		app.component('Entry', Entry)
-		app.component('Spoiler', Spoiler)
-
-		app.mount('#app')
-	</script>
-</head>
+	app.mount('#app')
+</script>
 
 <body>
 	<div id="app">
@@ -73,5 +75,3 @@
 		</section>
 	</div>
 </body>
-
-</html>
