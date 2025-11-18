@@ -28,7 +28,6 @@ node gfHunt.js
   <ul><li>:tada: me and the boys at two am</li></ul>
 </details>
 
-
 ### [:vhs: S02 E03](https://youtu.be/7HdYJosTb9s)
 - :email: atbash
 - :jigsaw: `rg nzb yv wruurxfog gl xlmgrmfv zolmv`
@@ -41,3 +40,15 @@ node gfHunt.js
   </ul>
 </details>
 
+## Discord
+
+### :discord: Mortious' role
+- :v: vigenere
+- :jigsaw: `dm hbvc ai qkmec awjy Kzsxrw Xzwhtxuk!`
+<details>
+  <summary>Spoiler</summary>
+  <ul>
+    <li>:key: cipherhunters</li>
+    <li>:tada: be surl to drink your Gilded Tiefling!</li>
+  </ul>
+</details>
