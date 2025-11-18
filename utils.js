@@ -9,4 +9,6 @@ const to_a0 = (c) => {
 
 const from_a0 = (n, offset) => String.fromCharCode(n + offset);
 
-export { to_a0, from_a0 };
+const isAlpha = (c) => c.match(/[a-zA-Z]/);
+
+export { to_a0, from_a0, isAlpha };

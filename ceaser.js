@@ -1,9 +1,9 @@
-import { to_a0, from_a0 } from "./utils.js";
+import { to_a0, from_a0, isAlpha } from "./utils.js";
 const min = 0;
 const max = 25;
 
 const increment_letter = (c, i) => {
-  if (!c.match(/[a-zA-Z]/)) return c;
+  if (!isAlpha(c)) return c;
 
   const { value, offset } = to_a0(c);
   const a = value + i;

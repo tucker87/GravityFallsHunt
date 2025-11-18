@@ -42,7 +42,7 @@ node gfHunt.js
 
 ## Discord
 
-### :discord: Mortious' role
+### :video_game: Mortious' role
 - :v: vigenere
 - :jigsaw: `dm hbvc ai qkmec awjy Kzsxrw Xzwhtxuk!`
 <details>
@@ -50,5 +50,16 @@ node gfHunt.js
   <ul>
     <li>:key: cipherhunters</li>
     <li>:tada: be surl to drink your Gilded Tiefling!</li>
+  </ul>
+</details>
+
+### :video_game: Mortious' role #2
+- :v: vigenere
+- :jigsaw: `Qofm arkkvv dlf'k wulbvt gvbtuxzgu bram`
+<details>
+  <summary>Spoiler</summary>
+  <ul>
+    <li>:key: huntingciphers</li>
+    <li>:tada: Just seeing who's paying attention hehe</li>
   </ul>
 </details>

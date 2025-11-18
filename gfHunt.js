@@ -14,3 +14,6 @@ atBash("wrhxliw.tt/aXCnU93QEE");
 
 console.log("\nDiscord: Mortius Role");
 vigenere("dm hbvc ai qkmec awjy Kzsxrw Xzwhtxuk!", "cipherhunters");
+
+console.log("\nDiscord: Mortius Role 2");
+vigenere("Qofm arkkvv dlf'k wulbvt gvbtuxzgu bram", "huntingciphers");
