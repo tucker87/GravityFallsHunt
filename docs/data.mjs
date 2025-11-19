@@ -14,7 +14,7 @@ const episodes = [
     '📼 S02 E01',
     'https://youtu.be/wTnU6LOoRPk',
     'wjz ok ep xacejo',
-    '👑 ceaser',
+    'ceaser',
     'and so it begins',
   ),
   entry(
