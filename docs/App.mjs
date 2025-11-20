@@ -4,6 +4,8 @@ import Spoiler from './Spoiler.mjs'
 import Group from './Group.mjs'
 import { groups } from './data.mjs'
 
+window.groups = groups
+
 const app = createApp({
   template: html`
     <h1>Gravity Falls Cipher Hunt</h1>

@@ -84,3 +84,19 @@ h3 {
 .i-vigenere::before {
   content: '📉';
 }
+
+summary {
+  position: relative;
+  max-width: 100px;
+  margin: auto;
+}
+.index-start {
+  counter-reset: index;
+}
+.index::after {
+  content: counter(index);
+  counter-increment: index;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

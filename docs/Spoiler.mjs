@@ -1,10 +1,10 @@
 const Spoiler = {
-  props: ['summary', 'icon'],
+  props: { summary: String, icon: String, index: Boolean, isOpen: Boolean },
   setup(props) {
     return { ...props }
   },
-  template: html` <details>
-    <summary>{{ summary }}</summary>
+  template: html` <details :open="isOpen">
+    <summary :class="{ index }">{{ summary }}</summary>
     <span :class="'i i-' + icon"><slot /></span>
   </details>`,
 }
