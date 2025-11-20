@@ -1,29 +1,20 @@
 import { createApp } from 'vue'
 import Entry from './Entry.mjs'
 import Spoiler from './Spoiler.mjs'
-import { episodes, discords } from './data.mjs'
+import Group from './Group.mjs'
+import { groups } from './data.mjs'
 
 const app = createApp({
-  template: `
-		<h1>Gravity Falls Cipher Hunt</h1>
-		<section>
-			<h2>Episodes</h2>
-			<div class="entries">
-				<Entry v-for="episode in episodes" :data="episode" />
-			</div>
-		</section>
-		<section>
-			<h2>Discord</h2>
-			<div class="entries">
-				<Entry v-for="discord in discords" :data="discord" />
-			</div>
-		</section>
-	`,
+  template: html`
+    <h1>Gravity Falls Cipher Hunt</h1>
+    <Group v-for="group in groups" :group="group" />
+  `,
   setup() {
-    return { episodes, discords }
+    return { groups }
   },
 })
 app.component('Entry', Entry)
 app.component('Spoiler', Spoiler)
+app.component('Group', Group)
 
 app.mount('#app')
