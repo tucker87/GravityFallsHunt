@@ -10,12 +10,13 @@ const table9 = {
   9: ['w', 'x', 'y', 'z'],
 }
 
+const lookup = m => table9[m[0]][m.length - 1]
+
 const t9 = s => {
-  const matches = s.match(/([0-9]|\s)\1*/g)
-  const answer = matches.reduce(
-    (ans, m) => ans + table9[m[0]][m.length - 1],
-    '',
+  const matches = s.match(
+    /([0-9]|\s)((?<=[0-6|8])\1{0,2}|(?<=[7|9])\1{0,3}|(?<=\s))/g,
   )
+  const answer = matches.reduce((ans, m) => ans + lookup(m), '')
   console.log(answer)
 }
 

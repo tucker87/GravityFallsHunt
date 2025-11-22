@@ -14,7 +14,7 @@ atBash('rg nzb yv wruurxfog gl xlmgrmfv zolmv')
 atBash('wrhxliw.tt/aXCnU93QEE')
 
 console.log('\nS02 E04')
-t9('6633998 933:3355 84433 222442555:5553366433 4447777 3666882255533:3')
+t9('6633998 933:3355 84433 2224425555553366433 4447777 3666882255533:3')
 
 console.log('\nDiscord: Mortius Role')
 vigenere('dm hbvc ai qkmec awjy Kzsxrw Xzwhtxuk!', 'cipherhunters')
