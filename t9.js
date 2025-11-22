@@ -16,8 +16,7 @@ const t9 = s => {
   const matches = s.match(
     /([0-9]|\s)((?<=[0-6|8])\1{0,2}|(?<=[7|9])\1{0,3}|(?<=\s))/g,
   )
-  const answer = matches.reduce((ans, m) => ans + lookup(m), '')
-  console.log(answer)
+  return matches.reduce((ans, m) => ans + lookup(m), '')
 }
 
 export { t9 }

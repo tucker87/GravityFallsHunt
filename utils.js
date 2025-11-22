@@ -23,4 +23,21 @@ const pipe = (value, ...fns) => fns.reduce((acc, fn) => fn(acc), value)
 
 const letterMap = (s, f) => s.split('').map(skipNonAlpha(f)).join('')
 
-export { to_a0, from_a0, isAlpha, letterMap, increment_letter }
+const reverse = s => s.split('').reverse().join('')
+
+const reverse_words = s =>
+  s
+    .split(' ')
+    .map(w => reverse(w))
+    .join(' ')
+
+export {
+  to_a0,
+  from_a0,
+  offsets,
+  isAlpha,
+  letterMap,
+  increment_letter,
+  reverse,
+  reverse_words,
+}

@@ -5,6 +5,6 @@ const swap_letter = c => {
   return to_char(Math.abs(value - 25))
 }
 
-const atBash = input => console.log(letterMap(input, swap_letter))
+const atBash = input => letterMap(input, swap_letter)
 
 export { atBash }
