@@ -31,6 +31,10 @@ const reverse_words = s =>
     .map(w => reverse(w))
     .join(' ')
 
+const log = console.log
+
+const replace = pattern => newValue => s => s.replace(pattern, newValue)
+
 export {
   to_a0,
   from_a0,
@@ -40,4 +44,7 @@ export {
   increment_letter,
   reverse,
   reverse_words,
+  log,
+  pipe,
+  replace,
 }
