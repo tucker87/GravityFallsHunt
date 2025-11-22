@@ -34,6 +34,13 @@ const groups = [
         'atbash',
         ['it may be difficult to continue alone', 'discord.gg/zCXmF93JVV'],
       ),
+      entry(
+        '📼 S02 E04',
+        'https://youtu.be/CwEwGB0ts2c',
+        '6633998 9333355 84433 2224425555553366433 4447777 36668822555333',
+        't9(kind of)',
+        ['next week the challenege is doubled'],
+      ),
     ],
   },
   {

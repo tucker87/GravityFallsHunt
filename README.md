@@ -8,7 +8,7 @@ I've turned the simple code hunting into coding challenge.
 
 ## How to run
 
-```bash
+```shell
 node gfHunt.js
 ```
 
