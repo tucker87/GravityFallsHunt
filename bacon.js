@@ -9,7 +9,7 @@ const fry = c => {
   return a(n)
 }
 
-const bacon = (s, a, b) =>
+const bacon = a => b => s =>
   s
     .replace(RegExp(a, 'g'), 0)
     .replace(RegExp(b, 'g'), 1)
