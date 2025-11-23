@@ -8,8 +8,19 @@ I've turned the simple code hunting into coding challenge.
 
 ## How to run
 
+### Javascript
+
 ```shell
+cd gf-js
 node gfHunt.js
+```
+
+### OCAML
+
+```shell
+cd gf-ocaml
+dune build
+dune exec gf-ocaml
 ```
 
 ## Ciphers

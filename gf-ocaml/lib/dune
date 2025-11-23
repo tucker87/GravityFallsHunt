@@ -1,0 +1,2 @@
+(library
+ (name gf_ocaml))
