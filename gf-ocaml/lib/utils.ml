@@ -18,3 +18,25 @@ let to_a0 c =
    match offset with
       | o when o >= 0 -> Letter (int_of_char c - offset, offset)
       | _ -> Symbol c
+
+let to_a0_simple c =
+   int_of_char c - getOffset c 
+
+let increment_letter i c =
+  let a = to_a0 c in
+   match a with
+         | Symbol c -> c
+         | Letter (v, o) ->
+               let v = v + i in
+               from_a0 o (v mod 26 + if v < 0 then 26 else 0)
+
+let join a = Array.fold_left (fun acc x -> acc ^ x) "" a
+
+let string_of_char c = String.make 1 c 
+
+let is_alpha c = Str.string_partial_match (Str.regexp "[a-zA-Z]") (string_of_char c) 0
+
+let skip_non_alpha f c = 
+   if (is_alpha c)
+      then f c 
+      else c

@@ -1,4 +1,4 @@
 (executable
  (public_name gf-ocaml)
  (name main)
- (libraries gf_ocaml))
+ (libraries gf_ocaml str))

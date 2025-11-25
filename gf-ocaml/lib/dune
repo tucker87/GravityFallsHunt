@@ -1,2 +1,3 @@
 (library
+  (libraries pcre2 str)
  (name gf_ocaml))
