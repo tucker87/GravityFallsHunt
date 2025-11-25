@@ -30,8 +30,6 @@ let increment_letter i c =
                let v = v + i in
                from_a0 o (v mod 26 + if v < 0 then 26 else 0)
 
-let join a = Array.fold_left (fun acc x -> acc ^ x) "" a
-
 let string_of_char c = String.make 1 c 
 
 let is_alpha c = Str.string_partial_match (Str.regexp "[a-zA-Z]") (string_of_char c) 0
@@ -40,3 +38,14 @@ let skip_non_alpha f c =
    if (is_alpha c)
       then f c 
       else c
+
+let reverse_string s =
+   String.to_seq s |> List.of_seq |> List.rev |> List.to_seq |> String.of_seq
+
+let reverse_words s = 
+   String.split_on_char ' ' s 
+   |> List.map reverse_string
+   |> String.concat " "
+
+let replace_all e r s =
+   s |> Str.global_replace (Str.regexp e) r

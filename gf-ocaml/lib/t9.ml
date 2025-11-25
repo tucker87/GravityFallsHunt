@@ -19,5 +19,6 @@ let regex = Pcre2.regexp {|([0-9]|\s)((?<=[0-6|8])\1{0,2}|(?<=[7|9])\1{0,3}|(?<=
 let run s =
    Pcre2.exec_all ~rex:regex s
    |> Array.map lookup_match
-   |> Utils.join
+   |> Array.to_list
+   |> String.concat ""
 
