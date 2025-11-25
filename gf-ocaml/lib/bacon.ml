@@ -1,11 +1,10 @@
 open Utils
 
 let fry c =
-   let n = int_of_string ("0b" ^ c) in
-   let x = match n with
+   let x = match int_of_string ("0b" ^ c) with
       | n when n > 20 -> n + 2
       | n when n > 8 -> n + 1
-      | _ -> n in
+      | n -> n in
    from_a0 (getOffset 'a') x
 
 

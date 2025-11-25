@@ -32,7 +32,7 @@ let increment_letter i c =
 
 let string_of_char c = String.make 1 c 
 
-let is_alpha c = Str.string_partial_match (Str.regexp "[a-zA-Z]") (string_of_char c) 0
+let is_alpha c = Pcre2.pmatch ~pat:"[a-zA-Z]" (string_of_char c)
 
 let skip_non_alpha f c = 
    if (is_alpha c)
@@ -47,5 +47,6 @@ let reverse_words s =
    |> List.map reverse_string
    |> String.concat " "
 
+
 let replace_all e r s =
-   s |> Str.global_replace (Str.regexp e) r
+   Pcre2.replace ~pat:e ~templ:r s

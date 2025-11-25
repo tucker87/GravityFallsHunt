@@ -37,6 +37,6 @@ let () =
    log "\nWould you rather have unlimited bacon, but no games? Or games, unlimited games, but no games?";
    "homozv urquom jzjfre vammnj uwqvay jzjuke hnmjzj uqehom jnjgiq vfmjnv ufjvom jnjtre vaxvnv uiqhom anjufe vayjsj ufehny uzjure vapvnv urqmom jnogfe uamjzv ufqgom vnjxfe homjev ufjhom jnvtfe hoxjzj ufqhap jzjuf qvfmjz jgkqha yjnvtr evamun vufhva yanjgf eaamjn jgreua mvzuuf evopjn juwqho monjtfe vaxjnj uiqhfmj"
    |> (Vigenere.run "unlimited")
-   |> Utils.replace_all {|[^b|n| ]|} ""
+   |> Utils.replace_all {|[^b|n|\s]|} ""
    |> Bacon.run "b" "n"
    |> log;
