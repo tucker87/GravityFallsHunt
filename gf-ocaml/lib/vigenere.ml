@@ -7,7 +7,7 @@ let plusplus_wrap len i =
 
 let next_offset k = 
    let i = ref 0 in
-   let pp = plusplus_wrap (String.length k) in
+   let pp = plusplus_wrap @@ String.length k in
    fun () -> -to_a0_simple (String.get k (pp i))
 
 let _run get_offset c = (get_offset () |> increment_letter)  c

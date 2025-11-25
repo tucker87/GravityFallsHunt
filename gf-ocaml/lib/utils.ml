@@ -22,6 +22,10 @@ let to_a0 c =
 let to_a0_simple c =
    int_of_char c - getOffset c 
 
+let to_a0_safe c = 
+   let offset = getOffset c in
+   (int_of_char c - offset, offset)
+
 let increment_letter i c =
   let a = to_a0 c in
    match a with
