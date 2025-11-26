@@ -44,6 +44,7 @@ const Entry = {
         >
           <div>{{ answer }}</div>
         </Spoiler>
+      <button @click="toggleOpen">Reveal All</button>
       </div>
     </div>
   `,
