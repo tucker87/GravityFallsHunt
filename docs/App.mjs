@@ -7,13 +7,13 @@ import { groups } from './data.mjs'
 window.groups = groups
 
 const app = createApp({
-  template: html`
+   template: html`
     <h1>Gravity Falls Cipher Hunt</h1>
     <Group v-for="group in groups" :group="group" />
   `,
-  setup() {
-    return { groups }
-  },
+   setup() {
+      return { groups }
+   },
 })
 app.component('Entry', Entry)
 app.component('Spoiler', Spoiler)
