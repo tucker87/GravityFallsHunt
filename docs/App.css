@@ -123,14 +123,13 @@ h3 {
    content: '📉';
 }
 
-summary {
-   position: relative;
-   max-width: 170px;
-   margin: auto;
-}
-
 .index-start {
    counter-reset: index;
+}
+
+.index {
+   position: relative;
+   padding-right: 2ch;
 }
 
 .index::after {
