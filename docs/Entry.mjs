@@ -31,8 +31,8 @@ const Entry = {
       <Spoiler :icon="data.cipher" summary="Cipher" :isOpen="state.isOpen">
         {{ data.cipher }}
       </Spoiler>
-      <Spoiler v-if="data.key" icon="key" summary="Key" :isOpen="state.isOpen">
-        {{ data.key }}
+      <Spoiler icon="key" summary="Key" :isOpen="state.isOpen">
+        {{ data.key || "None" }}
       </Spoiler>
       <div class="index-start">
         <Spoiler
