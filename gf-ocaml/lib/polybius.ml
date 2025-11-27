@@ -1,5 +1,3 @@
-open Utils
-
 type index =
    | Number of int
    | Pair of int * int
@@ -19,8 +17,7 @@ let rotated_table = [|
    [|"U"; "Q"; "R"; "S"; "T"|];
    [|"Z"; "V"; "W"; "X"; "Y"|]|]
 
-let lookup table x y =
-   table.(x-1).(y-5)
+let lookup table x y = table.(x-1).(y-5)
 
 let search lookup_t = function
       | Number x -> lookup_t x 5
@@ -28,18 +25,17 @@ let search lookup_t = function
       | Pair (x, y) -> lookup_t y x
       | Space -> " "
 
+let digit = Char.Ascii.digit_to_int
 
 let rec string_to_pairs = function
       | [] -> []
       | ' ' :: rest -> Space :: string_to_pairs rest
-      | a :: b :: rest when b = ' ' || b = 'x' -> Number (Char.Ascii.digit_to_int a) :: string_to_pairs rest
-      | a :: b :: rest -> Pair (Char.Ascii.digit_to_int a, Char.Ascii.digit_to_int b) :: string_to_pairs rest
-      | a :: [] -> Number (Char.Ascii.digit_to_int a) :: []
-
+      | a :: b :: rest when b = ' ' || b = 'x' -> Number (digit a) :: string_to_pairs rest
+      | a :: b :: rest -> Pair (digit a, digit b) :: string_to_pairs rest
+      | a :: [] -> Number (digit a) :: []
 
 let _run table input =
-   let lookup_t = lookup table in
-   List.map (search lookup_t) (string_to_pairs @@ explode input) |> String.concat ""
+   input |> Utils.explode |> string_to_pairs |> List.map @@ search (lookup table) |> String.concat ""
 
 let run input =
    _run standard_table input
