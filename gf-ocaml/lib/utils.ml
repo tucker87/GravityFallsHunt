@@ -36,6 +36,19 @@ let increment_letter i c =
 
 let string_of_char c = String.make 1 c 
 
+let explode str =
+  let rec explode_inner cur_index chars = 
+    if cur_index < String.length str then
+      let new_char = str.[cur_index] in
+      explode_inner (cur_index + 1) (chars @ [new_char])
+    else chars in
+  explode_inner 0 []
+
+let rec implode chars =
+  match chars with
+    [] -> ""
+    | h::t ->  string_of_char h ^ (implode t)
+
 let is_alpha c = Pcre2.pmatch ~pat:"[a-zA-Z]" (string_of_char c)
 
 let skip_non_alpha f c = 

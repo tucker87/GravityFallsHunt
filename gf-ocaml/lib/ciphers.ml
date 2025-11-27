@@ -3,3 +3,5 @@ let ceaser = Ceaser.run
 let bacon = Bacon.run
 let t9 = T9.run
 let vigenere = Vigenere.run
+let polybius = Polybius.run
+let polybius_rotated = Polybius.run_rotated
