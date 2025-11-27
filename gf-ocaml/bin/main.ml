@@ -43,6 +43,6 @@ let () =
    |> log;
 
    log "\nOther than codes/ciphers, do you have any other favourite puzzles that you enjoy doing? (crosswords, sudoku, wordsearches, etc)";
-   "29 4x481x19 4939 471x16363659 36292x1x 484 19392x4x 174x49 833957 7359 261656394729491x 1916293659 3x4x5x5x361x 2948 94281x 163x3x 263639 26471x1" 
+   "29 4x481x19 4939 471x16363659 36292x1 484x19392x4 174x49 833957 7359 261656394729491 1916293659 3x4x5x5x361 2948 94281 163x3 263639 26471x1" 
    |> polybius_rotated
    |> log;

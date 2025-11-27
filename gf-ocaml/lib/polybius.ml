@@ -30,7 +30,8 @@ let digit = Char.Ascii.digit_to_int
 let rec string_to_pairs = function
       | [] -> []
       | ' ' :: rest -> Space :: string_to_pairs rest
-      | a :: b :: rest when b = ' ' || b = 'x' -> Number (digit a) :: string_to_pairs rest
+      | a :: b :: rest when b = ' ' -> Number (digit a) :: Space :: string_to_pairs rest
+      | a :: b :: rest when b = 'x' -> Number (digit a) :: string_to_pairs rest
       | a :: b :: rest -> Pair (digit a, digit b) :: string_to_pairs rest
       | a :: [] -> Number (digit a) :: []
 
