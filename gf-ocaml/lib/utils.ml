@@ -44,9 +44,10 @@ let to_a0_safe c =
 let increment_letter i c =
   let a = char_to_letter c in
    match a with
-   | Upper v | Lower v | Symbol v ->
+   | Upper v | Lower v ->
       let v = v + i in
       from_a0 (get_char_offset c) (v mod 26 + if v < 0 then 26 else 0)
+   | Symbol s -> char_of_int s
 
 
 let explode s =
