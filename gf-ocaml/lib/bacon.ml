@@ -5,7 +5,7 @@ let fry c =
       | n when n > 20 -> n + 2
       | n when n > 8 -> n + 1
       | n -> n in
-   from_a0 (getOffset 'a') x
+   from_a0 (get_char_offset 'a') x
 
 
 let run a b s =
