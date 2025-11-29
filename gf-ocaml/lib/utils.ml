@@ -1,4 +1,3 @@
-let string_of_char c = String.make 1 c
 let is_digit c = c >= '0' && c <= '9'
 let is_lower c = c >= 'a' && c <= 'z'
 let is_upper c = c >= 'A' && c <= 'Z'

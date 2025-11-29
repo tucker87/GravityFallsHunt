@@ -12,8 +12,7 @@ type a0 =
 
 let is_aplha = function
   | Upper _ | Lower _ -> true
-  | Symbol _ -> false
-  | Digit _ -> false
+  | _ -> false
 
 let upper_of_int i = Upper i
 let lower_of_int i = Lower i
@@ -51,3 +50,5 @@ let inc i l =
   | Lower l -> Lower (inc l)
   | Digit d -> Digit (inc d)
   | Symbol _ -> l
+
+let sub i l = inc (-i) l
