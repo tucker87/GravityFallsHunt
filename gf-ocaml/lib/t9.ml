@@ -4,7 +4,7 @@ let lookup_match m =
     let offset = (String.length @@ Pcre2.get_substring m 0) - 1 in
     let d = Char.Ascii.digit_to_int c in
     (((d - 2) * 3) + offset + if d > 7 then 1 else 0)
-    |> Letter.lower_of_int |> Letter.to_char
+    |> A0.lower_of_int |> A0.to_char
   else c
 
 let run s =

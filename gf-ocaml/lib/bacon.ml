@@ -7,8 +7,8 @@ let fry c =
     | n when n > 8 -> n + 1
     | n -> n
   in
-  Letter.Lower x
+  A0.Lower x
 
 let run a b s =
   s |> replace_all a "0" |> replace_all b "1" |> String.split_on_char ' '
-  |> List.map fry |> List.to_seq |> Letter.to_string
+  |> List.map fry |> List.to_seq |> A0.to_string

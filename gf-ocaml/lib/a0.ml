@@ -3,7 +3,7 @@ open Utils
 let upper_offset = 65
 let lower_offset = 97
 
-type letter = Upper of int | Lower of int | Symbol of int
+type a0 = Upper of int | Lower of int | Symbol of int
 
 let is_aplha = function Upper _ | Lower _ -> true | Symbol _ -> false
 let upper_of_int i = Upper i
