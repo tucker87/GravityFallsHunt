@@ -2,4 +2,4 @@
  (name test_gf_ocaml)
  (inline_tests)
  (libraries gf_ocaml)
- (preprocess (pps ppx_inline_test)))
+ (preprocess (pps ppx_inline_test ppx_jane)))

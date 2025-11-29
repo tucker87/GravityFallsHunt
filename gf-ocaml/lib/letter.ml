@@ -7,6 +7,7 @@ type letter = Upper of int | Lower of int | Symbol of int
 
 let is_aplha = function Upper _ | Lower _ -> true | Symbol _ -> false
 let upper_of_int i = Upper i
+let lower_of_int i = Lower i
 
 let add_offset = function
   | Upper u -> u + upper_offset
