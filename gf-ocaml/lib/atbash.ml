@@ -5,4 +5,5 @@ let atbash_char c =
   | Lower l -> A0.Lower (25 - l)
   | Symbol _ | Digit _ -> l
 
+
 let run s = String.map (fun c -> atbash_char c |> A0.to_char) s
