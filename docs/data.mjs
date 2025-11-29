@@ -41,6 +41,13 @@ const groups = [
             't9(kind of)',
             ['next week the challenege is doubled'],
          ),
+         entry(
+            '📼 S02 E05',
+            'https://youtu.be/H8B3AQpKCU0',
+            '4 2.5 12.5 12.5 7.5 10.5 9 2.5 5.5 2.5 2.5 8 4.5 7 3.5 10 9 0.5 1.5 5.5 7.5 3 0.5 6 6 10 4 2.5 9.5 2.5 0.5 7 9.5 11.5 2.5 9 9.5 9 4.5 3.5 4 10?',
+            'double each then A1Z26',
+            ['heyyourekeepingtrackofalltheseanswersright?'],
+         ),
       ],
    },
    {

@@ -22,6 +22,18 @@ let () =
   "6633998 933:3355 84433 2224425555553366433 4447777 3666882255533:3" |> t9 |> log
 
 let () =
+  log "\nS02 E05";
+  "4 2.5 12.5 12.5 7.5 10.5 9 2.5 5.5 2.5 2.5 8 4.5 7 3.5 10 9 0.5 1.5 5.5 7.5 3 0.5 6 6 10 4 2.5 9.5 2.5 0.5 7 9.5 \
+   11.5 2.5 9 9.5 9 4.5 3.5 4 10"
+  |> String.split_on_char ' '
+  |> List.map Float.of_string
+  |> List.map (fun x -> Int.of_float (Float.mul x 2.0) - 1)
+  |> List.map A0.lower_of_int
+  |> List.to_seq
+  |> A0.to_string
+  |> log
+
+let () =
   log "\nDiscord: Mortius Role";
   "dm hbvc ai qkmec awjy Kzsxrw Xzwhtxuk!" |> vigenere "cipherhunters" |> log
 
