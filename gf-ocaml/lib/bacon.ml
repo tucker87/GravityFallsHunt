@@ -10,10 +10,4 @@ let fry c =
   A0.Lower x
 
 let run a b s =
-  s
-  |> replace_all a "0"
-  |> replace_all b "1"
-  |> String.split_on_char ' '
-  |> List.map fry
-  |> List.to_seq
-  |> A0.to_string
+  s |> replace_all a "0" |> replace_all b "1" |> String.split_on_char ' ' |> List.map fry |> List.to_seq |> A0.to_string

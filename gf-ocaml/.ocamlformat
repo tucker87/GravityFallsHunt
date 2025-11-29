@@ -1,2 +1,4 @@
 profile = janestreet
 let-binding-spacing = compact
+margin = 120
+let-module = compact

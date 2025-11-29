@@ -4,8 +4,7 @@ let get_info ms =
 
 let lookup_match (c, offset) =
   match A0.of_char c with
-  | Digit d ->
-    (((d - 2) * 3) + offset + if d > 7 then 1 else 0) |> A0.lower_of_int |> A0.to_char
+  | Digit d -> (((d - 2) * 3) + offset + if d > 7 then 1 else 0) |> A0.lower_of_int |> A0.to_char
   | _ -> c
 
 let run s =
