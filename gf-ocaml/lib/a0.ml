@@ -1,22 +1,28 @@
 open Utils
 
+let digit_offset = 48
 let upper_offset = 65
 let lower_offset = 97
 
-type a0 = Upper of int | Lower of int | Symbol of int
+type a0 = Upper of int | Lower of int | Symbol of int | Digit of int
 
-let is_aplha = function Upper _ | Lower _ -> true | Symbol _ -> false
+let is_aplha = function
+  | Upper _ | Lower _ -> true
+  | Symbol _ -> false
+  | Digit _ -> false
+
 let upper_of_int i = Upper i
 let lower_of_int i = Lower i
 
 let add_offset = function
   | Upper u -> u + upper_offset
   | Lower l -> l + lower_offset
+  | Digit d -> d + digit_offset
   | Symbol _ -> 0
 
 let to_char letter =
   match letter with
-  | Upper _ | Lower _ -> char_of_int (add_offset letter)
+  | Upper _ | Lower _ | Digit _ -> char_of_int (add_offset letter)
   | Symbol s -> char_of_int s
 
 let of_char = function
@@ -26,7 +32,7 @@ let of_char = function
 
 let of_string s = String.to_seq s |> Seq.map of_char
 let to_string ls = ls |> Seq.map to_char |> String.of_seq
-let to_int = function Upper u | Lower u | Symbol u -> u
+let to_int = function Upper u | Lower u | Symbol u | Digit u -> u
 
 let inc i l =
   let inc x =
@@ -36,4 +42,5 @@ let inc i l =
   match l with
   | Upper u -> Upper (inc u)
   | Lower l -> Lower (inc l)
+  | Digit d -> Digit (inc d)
   | Symbol _ -> l
