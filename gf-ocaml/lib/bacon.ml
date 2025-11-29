@@ -9,7 +9,6 @@ let fry c =
   in
   A0.Lower x
 
-
 let run a b s =
   s
   |> replace_all a "0"
